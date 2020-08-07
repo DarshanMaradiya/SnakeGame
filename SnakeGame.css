@@ -1,0 +1,91 @@
+html {
+  height: 100vh;
+  width: 100vh;
+}
+
+body{
+	background-color: black;
+	padding: 0px;
+	margin: 0px;
+	min-height: 100%;
+	min-width: 100%;
+	overflow: hidden;
+	position:absolute; top:0; bottom:0; right:0; left:0; 
+}
+
+.snake{
+	position: absolute;
+	/*background-color: green;*/
+	background-image: url('Images/snakeImg15.png');
+	background-size: cover;
+	/*transform: rotate(270deg);*/
+	height : 50px;
+	width: 50px;
+	z-index: 2;
+
+	/*-moz-box-shadow: 10px 10px 16px #000000;
+	-webkit-box-shadow: 10px 10px 16px #000000;
+	box-shadow: 10px 10px 16px #000000;*/
+}
+
+.headNode{
+	/*box-shadow: 0 0 10px white;*/
+	/*transform: rotate(90deg);*/
+	background-image: url('Images/snakeHeadImg02.png');
+	background-size: cover;
+	height : 50px;
+	width: 50px;
+	background-size: cover;
+	z-index: 3;
+}
+
+/*.score{
+	height: 75px;
+	width: 233px;
+	text-align: center;
+	padding-top: 10px;
+	background-color: white;
+	display: block;
+}
+*/
+
+.fruit{
+	position: absolute;
+	/*background-color: red;*/
+	background-image: url('Images/fruit.png');
+	background-size: cover;
+	height: 50px;
+	width: 50px;
+	z-index: 1;
+	/*box-shadow: 0 0 10px white;*/
+}
+
+.wall{
+	position: absolute;
+	/*display: inline-block;*/
+	/*background-color: yellow;*/
+	background-image: url('Images/wallImg01.jpeg');
+	/*background-size: cover;*/
+	height: 47px;
+	width: 47px;
+	z-index: 1;
+}
+
+.gameOverImg{
+	background-size:cover;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+
+.pressEnterImg{
+	background-size:cover;
+	display: block;
+	position: absolute;
+	left : 35%;
+	top : 35%;
+	/*vertical-align: center;*/
+	z-index: 4;
+}
